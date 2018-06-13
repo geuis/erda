@@ -25,6 +25,8 @@
     "object-curly-spacing": [
       "error",
       "never"
-    ]
+    ],
+    "space-before-function-paren": "error",
+    "no-console": "warn"
   }
 }

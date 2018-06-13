@@ -1,6 +1,7 @@
-import styled from 'react-emotion';
+// import styled from 'react-emotion';
+import {injectGlobal} from 'react-emotion';
+import normalize from "normalize.css";
 
-export const Wrapper = styled.div`
-  width: 200px;
-  outline: 2px solid #cc00cc;
+injectGlobal`
+  ${normalize}
 `;

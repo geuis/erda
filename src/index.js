@@ -1,15 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Wrapper} from './index.style';
-
-const App = () => {
-  return (
-    <Wrapper>
-      The App Component
-    </Wrapper>
-  );
-};
-
-export default App;
+import App from 'components/app';
+import './index.style';
 
 ReactDOM.render(<App />, document.getElementById('app'));

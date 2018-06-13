@@ -4,6 +4,11 @@ const webpack = require('webpack');
 // const env = require('dotenv');
 
 module.exports = {
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components')
+    }
+  },
   module: {
     rules: [
       {
@@ -26,6 +31,10 @@ module.exports = {
             options: {minimize: true}
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: 'raw-loader'
       }
     ]
   },
