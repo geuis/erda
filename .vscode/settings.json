@@ -4,5 +4,8 @@
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "javascript.format.insertSpaceAfterConstructor": true,
   "files.insertFinalNewline": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "editor.rulers": [
+    80
+  ]
 }

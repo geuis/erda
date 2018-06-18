@@ -19,14 +19,16 @@
   "parser": "babel-eslint",
   "rules": {
     "max-len": [
-      "error",
-      80
+      "warn",
+      80,
+      {"ignoreComments": true}
     ],
     "object-curly-spacing": [
       "error",
       "never"
     ],
     "space-before-function-paren": "error",
-    "no-console": "warn"
+    "no-console": "warn",
+    "no-unused-vars": "warn"
   }
 }

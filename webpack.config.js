@@ -6,7 +6,8 @@ const webpack = require('webpack');
 module.exports = {
   resolve: {
     alias: {
-      components: path.resolve(__dirname, 'src/components')
+      components: path.resolve(__dirname, 'src/components'),
+      stores: path.resolve(__dirname, 'src/stores')
     }
   },
   module: {
@@ -44,11 +45,11 @@ module.exports = {
       filename: './index.html'
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     host: 'localhost',
-    hot: true,
+    // hot: true,
   }
 };
